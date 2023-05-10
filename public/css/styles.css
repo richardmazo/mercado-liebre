@@ -1,0 +1,130 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER */
+
+header{
+    background-color: #EAC926;
+}
+
+
+header p{
+    text-align: center;
+}
+
+header img{
+    width: 180px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+header .buscador .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    max-width: 50%;
+    margin-left: 20px;
+}
+
+
+header .buscador .lupa i{ 
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    padding: 1px;
+    margin-top: 3px;
+    margin-left: 20px;
+}
+
+header nav ul.top-navbar{
+    margin-bottom: 15px;
+}
+
+header nav ul{
+    list-style-type: none;
+    padding: 0;    
+}
+
+header nav ul li{
+    padding: 0;
+    max-block-size: 16px;
+}
+
+header nav ul li a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+    margin: 0px 0px; 
+}
+
+
+header div.burger-menu i{
+    color: #FFF;
+    background-color: #03264C;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
+    border-radius: 5px;
+}
+
+header div.burger-menu {
+    text-align: center;
+}
+
+/* FIN HEADER */
+
+/* MAIN */
+main section article p.precios{
+    color: #666;
+    font-size: 18px;
+}
+
+main section article p.descuentos{
+    color: #666;
+    font-size: 16px;
+}
+
+main section h3.titulares{
+    font-size: 24px;
+    color: #666;
+}
+
+main section h4{
+    color: #666;
+}
+
+/* FIN MAIN */
+
+/* FOOTER */
+
+footer section article{
+    text-align: center;
+}
+
+footer section article h4{
+    font-size: 16px;
+    margin: 0 0;
+    color: #666;
+}
+
+footer section article p{
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+footer section article i{
+    width: 2em;
+    color: #03264C;
+    margin-bottom: 10px;
+}
+
+footer section article h4.copyrig{
+    color: #666;
+    text-align: left;
+    font-size: 12px;
+}
+/* FIN FOOTER */
