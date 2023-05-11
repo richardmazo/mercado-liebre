@@ -6,15 +6,17 @@ body{
 
 header{
     background-color: #EAC926;
+    width: 100vw;
 }
 
 
 header p{
     text-align: center;
+    width: 100vw;
 }
 
 header img{
-    width: 180px;
+    width: 70%;
     margin-left: 30px;
     margin-bottom: 10px;
     margin-top: 20px;
@@ -24,8 +26,9 @@ header .buscador .input{
     background-color: #FFF;
     border: 1px solid #000;
     color: #666;
-    max-width: 50%;
+    max-width: 60%;
     margin-left: 20px;
+    font-size: 12px;
 }
 
 
@@ -36,6 +39,10 @@ header .buscador .lupa i{
     padding: 1px;
     margin-top: 3px;
     margin-left: 20px;
+}
+
+header nav{
+    display: none;
 }
 
 header nav ul.top-navbar{
@@ -73,17 +80,61 @@ header div.burger-menu {
     text-align: center;
 }
 
+.banner-img{
+    width: 100vw;
+}
+
 /* FIN HEADER */
 
 /* MAIN */
+
+main{
+    width: 90vw; 
+    text-align: center;
+}
+
+main section article {
+    margin-bottom: 10px;
+}
+
+main section article img{
+    width: 60%;
+}
+
+.info-article{
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+}
+
+main section article div div i{
+    width: 40px;
+    height: 40px;
+    border: solid 1px #39b54a;
+    border-radius: 100%;
+    color: #39b54a;
+    padding-top: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 16px;
+}
+
+.desc-prod{
+    display: none;
+}
+
 main section article p.precios{
-    color: #666;
+    color: black;
     font-size: 18px;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 main section article p.descuentos{
-    color: #666;
+    color: #39b54a;
     font-size: 16px;
+    text-align: left;
+    margin-top: 0;
 }
 
 main section h3.titulares{
@@ -92,7 +143,9 @@ main section h3.titulares{
 }
 
 main section h4{
+    text-align: left;
     color: #666;
+    margin-bottom: 2px;
 }
 
 /* FIN MAIN */
@@ -128,3 +181,105 @@ footer section article h4.copyrig{
     font-size: 12px;
 }
 /* FIN FOOTER */
+
+
+@media(min-width: 361px){
+    header img{
+        width: 70%;
+    }    
+    .desc-prod{
+        display: block;
+    }
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    header nav{
+        display: block;
+    }
+    header nav ul li{
+        max-block-size: 17px;
+    }
+    header nav ul li a{
+        font-size: 17px;
+        margin: 1px 1px; 
+    }    
+    header div.burguer-meu{
+        display: none;
+    }
+    .burger-menu{
+        display: none;
+    }
+    header .buscador .input{
+        max-width: 50%;
+        font-size: 15px;
+    }
+    header nav ul li a{
+        font-size: 15x;
+        margin: 1px 1px; 
+    }
+    header p{
+        font-size: 15x;
+    }
+    main section article img{
+        width: 350px;
+    }
+    
+}
+
+@media(min-width: 769px){
+    header img{
+        width: 560px;
+    }
+    header .buscador .input{
+        max-width: 50%;
+        font-size: 22px;
+    }
+    header .buscador .lupa i{ 
+        border: 2px solid #000;
+        padding: 5px;
+        margin-top: 8px;
+        margin-left: 20px;
+    }
+    header nav ul li{
+        max-block-size: 20px;
+    }
+    header nav ul li a{
+        font-size: 22px;
+        margin: 1px 1px; 
+    }
+    header p{
+        text-align: center;
+        width: 100vw;
+        font-size: 22px;
+    }  
+    main section article p.precios{
+        font-size: 22px;
+    }
+    
+    main section article p.descuentos{
+        font-size: 20px;
+    }
+    
+    main section h3.titulares{
+        font-size: 26px;
+    }
+    
+    main section h4{
+        font-size: 20px;
+    }   
+    footer section article h4{
+        font-size: 20px;
+    }
+    
+    footer section article p{
+        font-size: 16px;
+    }
+    
+    footer section article i{
+        width: 4em;
+    }
+    
+    footer section article h4.copyrig{
+        font-size: 16px;
+    }      
+}
