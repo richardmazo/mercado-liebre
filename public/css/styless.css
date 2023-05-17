@@ -1,0 +1,392 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* HEADER */
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;  
+}
+
+header {
+  background-color: #eac926;
+  width: 100vw;
+}
+
+.logo {
+  width: 50%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-right: 5px;
+}
+
+header div .buscador .input {
+  background-color: #fff;
+  color: #666;
+  max-width: 100%;
+  font-size: 10px;
+  overflow: hidden; /* Agregado para ocultar el texto que se desborda */
+  text-overflow: ellipsis; /* Agregado para mostrar "..." al final del texto desbordado */
+  white-space: nowrap;  
+  padding: 5px; 
+  border-radius: 5%;
+}
+
+header div .buscador .lupa i {
+  background-color: #fff;
+  color: #666;
+  padding: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  padding: 4px; 
+}
+
+.buscador {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Agregado para ocultar el contenido que se desborda */
+}
+
+.compra-cuotas{
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+}
+
+header div div p {
+  text-align: center;
+  width: 100vw;
+  font-size: 12px;
+}
+
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-navbar {
+  display: none;
+}
+
+header nav ul.top-navbar {
+  margin-bottom: 15px;
+}
+
+header nav ul {
+  padding: 0;
+  display: flex;
+  margin: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #000;
+  margin: 0px 0px;
+}
+
+header div.burger-menu i {
+  color: #fff;
+  background-color: #03264c;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px 0px 20px 0px;
+  border-radius: 5px;
+}
+
+header div.burger-menu {
+  text-align: center;
+}
+
+.banner-img {
+  width: 100vw;
+}
+
+/* FIN HEADER */
+
+/* MAIN */
+
+main {
+  margin: 0 auto;
+  width: 90vw;
+}
+
+main section article {
+  margin-bottom: 10px;
+}
+
+main section div article img {
+  width: 100%;
+}
+
+.info-article {
+  border-top: solid 1px #ebebeb;
+  padding: 15px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+main section article div i {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
+.desc-prod {
+  display: none;
+}
+
+main section article p.precio {
+  color: black;
+  width: 30%;
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+main section article p.descuento {
+  color: #39b54a;
+  width: 70%;
+  font-size: 16px;
+  margin-top: 0;
+}
+
+main section h3.titulares {
+  font-size: 24px;
+  color: #666;
+}
+
+.desc-prod {
+  text-align: left;
+  color: #666;
+  margin-bottom: 2px;
+}
+
+/* FIN MAIN */
+
+/* FOOTER */
+
+footer section article {
+  text-align: center;
+}
+
+footer section article h4 {
+  font-size: 16px;
+  margin: 0 0;
+  color: #666;
+}
+
+footer section article p {
+  font-size: 12px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+footer section article i {
+  width: 2em;
+  color: #03264c;
+  margin-bottom: 10px;
+}
+
+footer section article h4.copyrig {
+  color: #666;
+  text-align: left;
+  font-size: 12px;
+}
+/* FIN FOOTER */
+
+@media (min-width: 361px) {
+  .logo {
+    width: 40%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 1px;
+  }  
+  header div .buscador .input {
+    width: 80%;
+    font-size: 12px;
+    border: 1px solid #000;
+  }
+
+  header div .buscador .lupa i {
+    border: 1px solid #000;
+    margin-left: 5px;
+  }   
+  .compra-cuotas{
+    margin-top: 5px;
+    width: 20%;
+    font-size: 10px;
+  }  
+  .main-navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;    
+    flex-wrap: nowrap;       
+  }
+  header img {
+    width: 70%;
+  }
+  .desc-prod {
+    display: block;
+  }
+  main section article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 45%;
+  }
+  .burger-menu {
+    display: none;
+  }
+  header nav {
+    display: block;
+  }
+  header nav ul li {
+    max-block-size: 10px;
+  }
+  header nav ul li a {
+    font-size: 8px;
+    margin: 1px 1px;
+  }
+  header nav ul li a {
+    font-size: 15x;
+    margin: 1px 1px;
+  }
+
+.main-navbar li{
+    margin: 0 1px;  
+}   
+  main section article img {
+    width: 350px;
+  }
+  .productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  main section article p.precio {
+    width: 50%;
+    font-size: 14px;
+  }
+
+  main section div article p.descuento {
+    font-size: 14px;
+    width: 50%;
+  }
+
+  main section h3.titulares {
+    font-size: 20px;
+  }  
+}
+
+@media (min-width: 769px) {
+  .buscador {
+    justify-content: left;
+    margin-left: 30px;
+    flex-grow: 5%;
+  }
+  .logo {
+    width: 40%;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-left: 5px;
+  }
+  .main-navbar {
+    max-width: 1200px;
+    justify-content: space-between;    
+    margin: auto;
+  }
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;       
+  }
+  header div .buscador .input {
+    width: 100%;
+    font-size: 18px;
+    border-radius: 0;
+  }
+
+  header div .buscador .lupa i {
+    margin-left: 5px;
+    padding: 6px;
+
+  }  
+  header nav ul li {
+    margin: 10px 5px;
+  }
+  header nav ul li a {
+    font-size: 18px;
+    margin: 1px 1px;
+    ;
+  }
+  header div p {
+    width: 50%;
+    margin-left: 30px;
+  }
+  .compra-cuotas{
+    width: 50%;
+    font-size: 18px;
+  }
+  main section article p.precio {
+    font-size: 22px;
+  }
+
+  main section div article {
+    width: 22.5%;
+  }
+
+  main section div article p.descuento {
+    font-size: 20px;
+  }
+
+  main section h3.titulares {
+    font-size: 26px;
+  }
+  footer section article h4 {
+    font-size: 20px;
+  }
+
+  footer section article p {
+    font-size: 16px;
+  }
+
+  footer section article i {
+    width: 4em;
+  }
+
+  footer section article h4.copyrig {
+    font-size: 16px;
+  }
+}
