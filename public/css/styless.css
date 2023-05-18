@@ -13,7 +13,7 @@ body {
 .top-header {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
 }
 
 header {
@@ -33,10 +33,10 @@ header div .buscador .input {
   color: #666;
   max-width: 100%;
   font-size: 10px;
-  overflow: hidden; /* Agregado para ocultar el texto que se desborda */
-  text-overflow: ellipsis; /* Agregado para mostrar "..." al final del texto desbordado */
-  white-space: nowrap;  
-  padding: 5px; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 5px;
   border-radius: 5%;
 }
 
@@ -46,7 +46,7 @@ header div .buscador .lupa i {
   padding: 0px;
   margin-top: 0px;
   margin-left: 0px;
-  padding: 4px; 
+  padding: 4px;
 }
 
 .buscador {
@@ -54,10 +54,10 @@ header div .buscador .lupa i {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden; /* Agregado para ocultar el contenido que se desborda */
+  overflow: hidden;
 }
 
-.compra-cuotas{
+.compra-cuotas {
   width: 100%;
   font-size: 12px;
   text-align: center;
@@ -68,7 +68,6 @@ header div div p {
   width: 100vw;
   font-size: 12px;
 }
-
 
 header nav {
   display: flex;
@@ -221,13 +220,78 @@ footer section article h4.copyrig {
 }
 /* FIN FOOTER */
 
+/* INICIO FORMULARIO REGISTRO */
+
+#formulario-registro {
+  background-color: #ebebeb;
+}
+
+.formularios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-top: 20px;
+}
+
+form div {
+  margin-bottom: 30px;
+  border-radius: 20%;
+  width: 100%;
+  text-align: center;
+}
+
+form h3{
+  margin-bottom: 12px;
+  font-size: 14px;
+  align-self: flex-start;
+  margin-left: 10px;
+}
+
+.text-field {
+  justify-content: center;
+  padding: 5px;
+  width: 80%;
+}
+
+.selecciones-perfil {
+  display: flex;
+}
+
+
+.selecciones div{
+  padding-left: 12px;
+  display: flex;
+}
+
+.selecciones div label{
+  padding-left: 8px;
+}
+
+.botonForm {
+  padding: 5px;
+  width: 40%;
+}
+
+.botonSubmit {
+  background-color: green;
+  color: #fff;
+}
+
+.botonReset {
+  background-color: red;
+  color: #fff;
+}
+/* FIN FORMULARIO REGISTRO */
+
 @media (min-width: 361px) {
   .logo {
     width: 40%;
     padding-bottom: 10px;
     padding-top: 10px;
     padding-left: 1px;
-  }  
+  }
   header div .buscador .input {
     width: 80%;
     font-size: 12px;
@@ -237,12 +301,12 @@ footer section article h4.copyrig {
   header div .buscador .lupa i {
     border: 1px solid #000;
     margin-left: 5px;
-  }   
-  .compra-cuotas{
+  }
+  .compra-cuotas {
     margin-top: 5px;
     width: 20%;
     font-size: 10px;
-  }  
+  }
   .main-navbar {
     display: flex;
     justify-content: space-between;
@@ -252,8 +316,8 @@ footer section article h4.copyrig {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    justify-content: center;    
-    flex-wrap: nowrap;       
+    justify-content: center;
+    flex-wrap: nowrap;
   }
   header img {
     width: 70%;
@@ -283,9 +347,9 @@ footer section article h4.copyrig {
     margin: 1px 1px;
   }
 
-.main-navbar li{
-    margin: 0 1px;  
-}   
+  .main-navbar li {
+    margin: 0 1px;
+  }
   main section article img {
     width: 350px;
   }
@@ -306,7 +370,25 @@ footer section article h4.copyrig {
 
   main section h3.titulares {
     font-size: 20px;
-  }  
+  }
+  .botonSubmit {
+    width: 30%;
+    padding: 10px;
+  }
+  
+  .botonReset {
+    width: 30%;
+    padding: 10px;
+  }
+
+  .selecciones div{
+    padding-left: 20px;
+  }
+
+  form h3{
+    margin-left: 20px;
+  }
+
 }
 
 @media (min-width: 769px) {
@@ -323,14 +405,14 @@ footer section article h4.copyrig {
   }
   .main-navbar {
     max-width: 1200px;
-    justify-content: space-between;    
+    justify-content: space-between;
     margin: auto;
   }
   .top-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    justify-content: center;       
+    justify-content: center;
   }
   header div .buscador .input {
     width: 100%;
@@ -341,21 +423,19 @@ footer section article h4.copyrig {
   header div .buscador .lupa i {
     margin-left: 5px;
     padding: 6px;
-
-  }  
+  }
   header nav ul li {
     margin: 10px 5px;
   }
   header nav ul li a {
     font-size: 18px;
     margin: 1px 1px;
-    ;
   }
   header div p {
     width: 50%;
     margin-left: 30px;
   }
-  .compra-cuotas{
+  .compra-cuotas {
     width: 50%;
     font-size: 18px;
   }
@@ -388,5 +468,45 @@ footer section article h4.copyrig {
 
   footer section article h4.copyrig {
     font-size: 16px;
+  }
+
+  #formulario-registro {
+    width: 50%;
+  }
+
+  .formularios {
+    padding-top: 40px;
+  }
+
+  form h3{
+    margin-bottom: 16px;
+    font-size: 18px;
+    margin-left: 70px;
+  }
+
+  .selecciones-perfil {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+  }
+
+  .selecciones div{
+    padding-left: 80px;
+  }
+
+  .tipo-perfil{
+    display: flex;
+    align-items: left;
+    margin-left: 80px;
+  }
+
+  .botonSubmit {
+    width: 30%;
+    padding: 10px;
+  }
+  
+  .botonReset {
+    width: 30%;
+    padding: 10px;
   }
 }
