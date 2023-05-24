@@ -129,6 +129,10 @@ main section article {
   margin-bottom: 10px;
 }
 
+.articulos:hover i {
+  transform: rotate(-90deg);
+}
+
 main section div article img {
   width: 100%;
 }
@@ -154,10 +158,7 @@ main section article div i {
   position: absolute;
   right: 20px;
   top: -15px;
-}
-
-.desc-prod {
-  display: none;
+  transition: all 0.5s;
 }
 
 main section article p.precio {
@@ -181,6 +182,7 @@ main section h3.titulares {
 }
 
 .desc-prod {
+  display: none;
   text-align: left;
   color: #666;
   margin-bottom: 2px;
@@ -189,13 +191,15 @@ main section h3.titulares {
 /* FIN MAIN */
 
 /* FOOTER */
+footer{
+  margin-top: 5px;
+}
 
 footer section article {
   text-align: center;
 }
 
 footer section article h4 {
-  font-size: 16px;
   margin: 0 0;
   color: #666;
 }
@@ -208,7 +212,7 @@ footer section article p {
 }
 
 footer section article i {
-  width: 2em;
+  font-size: 2em;
   color: #03264c;
   margin-bottom: 10px;
 }
@@ -218,12 +222,17 @@ footer section article h4.copyrig {
   text-align: left;
   font-size: 12px;
 }
+
+.footer-section article i:hover {
+  color: #0022AA;
+}
 /* FIN FOOTER */
 
 /* INICIO FORMULARIO REGISTRO */
 
 #formulario-registro {
   background-color: #ebebeb;
+  margin-bottom: 120px;
 }
 
 .formularios {
@@ -242,7 +251,7 @@ form div {
   text-align: center;
 }
 
-form h3{
+form h3 {
   margin-bottom: 12px;
   font-size: 14px;
   align-self: flex-start;
@@ -259,24 +268,32 @@ form h3{
   display: flex;
 }
 
-
-.selecciones div{
+.selecciones div {
   padding-left: 12px;
   display: flex;
 }
 
-.selecciones div label{
+.selecciones div label {
   padding-left: 8px;
 }
 
 .botonForm {
   padding: 5px;
   width: 40%;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  color: #FFFFFF;
+  font-weight: bold;
 }
 
 .botonSubmit {
-  background-color: green;
-  color: #fff;
+  background-color: #0000FF;
+}
+
+.botonSubmit:hover {
+  background-color: #0022AA;
 }
 
 .botonReset {
@@ -286,6 +303,19 @@ form h3{
 /* FIN FORMULARIO REGISTRO */
 
 @media (min-width: 361px) {
+  .articulos:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  .articulos:hover .desc-prod {
+    display: block;
+  }
+  .desc-prod {
+    display: none;
+    transition: all 0.5s;
+  }
+  .articulos {
+    transition: all 0.3s;
+  }
   .logo {
     width: 40%;
     padding-bottom: 10px;
@@ -322,11 +352,7 @@ form h3{
   header img {
     width: 70%;
   }
-  .desc-prod {
-    display: block;
-  }
   main section article {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
     width: 45%;
   }
   .burger-menu {
@@ -350,9 +376,7 @@ form h3{
   .main-navbar li {
     margin: 0 1px;
   }
-  main section article img {
-    width: 350px;
-  }
+
   .productos {
     display: flex;
     flex-wrap: wrap;
@@ -375,20 +399,19 @@ form h3{
     width: 30%;
     padding: 10px;
   }
-  
+
   .botonReset {
     width: 30%;
     padding: 10px;
   }
 
-  .selecciones div{
+  .selecciones div {
     padding-left: 20px;
   }
 
-  form h3{
+  form h3 {
     margin-left: 20px;
   }
-
 }
 
 @media (min-width: 769px) {
@@ -454,8 +477,12 @@ form h3{
   main section h3.titulares {
     font-size: 26px;
   }
+
+  .footer-section{
+    display: flex;
+  }
   footer section article h4 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   footer section article p {
@@ -468,6 +495,7 @@ form h3{
 
   footer section article h4.copyrig {
     font-size: 16px;
+    flex-wrap: wrap;
   }
 
   #formulario-registro {
@@ -478,7 +506,7 @@ form h3{
     padding-top: 40px;
   }
 
-  form h3{
+  form h3 {
     margin-bottom: 16px;
     font-size: 18px;
     margin-left: 70px;
@@ -490,11 +518,11 @@ form h3{
     align-self: flex-start;
   }
 
-  .selecciones div{
+  .selecciones div {
     padding-left: 80px;
   }
 
-  .tipo-perfil{
+  .tipo-perfil {
     display: flex;
     align-items: left;
     margin-left: 80px;
@@ -504,7 +532,7 @@ form h3{
     width: 30%;
     padding: 10px;
   }
-  
+
   .botonReset {
     width: 30%;
     padding: 10px;
